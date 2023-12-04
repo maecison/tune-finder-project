@@ -32,7 +32,7 @@ export default function Home() {
           </div>
 
           <p className="mt-3 mb-3 max-w-md mx-auto text-base text-gray-500 sm:text-lg md:mt-3 md:text-xl md:max-w-3xl">
-            Looking to discover new tunes? Click the button below!
+            Looking to discover new tunes? Click the button below!``
           </p>
 
           <div className="rounded-md shadow mt-3">
