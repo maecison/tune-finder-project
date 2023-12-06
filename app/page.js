@@ -1,4 +1,9 @@
-import Link from "next/link";
+import Link from 'next/link';
+import { useClient } from 'react';
+
+function MyComponent() {
+  useClient();
+}
 
 export default function Home() {
   return (
@@ -23,7 +28,7 @@ export default function Home() {
             </div>
 
             <div>
-              <Link href="/lyrics">
+              <Link href="/lyricsfolder/lyrics">
                 <button className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-indigo-700 bg-indigo-100 hover:bg-indigo-200 md:py-4 md:text-lg md:px-10">
                   Get Song Lyrics
                 </button>
