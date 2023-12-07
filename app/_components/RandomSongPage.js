@@ -1,8 +1,7 @@
-'use client';
 import Link from "next/link";
-import SongDetailsContainer from '../_components/SongDetailsContainer';
+import RandomSongContainer from '../_components/RandomSongContainer';
 
-export default function SongDetails() {
+export default function RandomSongPage() {
   return (
     <div className="flex flex-col items-start justify-start min-h-screen py-2 px-4 w-full">
       <div className="rounded-md shadow sm:flex mb-3">
@@ -17,19 +16,15 @@ export default function SongDetails() {
 
       <div className="text-center mx-auto">
         <h1 className="text-4xl tracking-tight font-extrabold text-blue-500 sm:text-5xl md:text-6xl">
-          Song Details Page
+          Random Song Generator
         </h1>
 
         <p className="mt-3 max-w-md mx-auto text-base text-gray-500 sm:text-lg md:mt-3 md:text-xl md:max-w-3xl">
-          Explore detailed information about your favorite songs.
+          Press the button below to generate a random song.
         </p>
-
-        <p className="mt-3 mb-3 max-w-md mx-auto text-base text-gray-500 sm:text-lg md:mt-3 md:text-xl md:max-w-3xl">
-          Ready to dive deep into the song's details? Enter the Artist and Song Title below!
-        </p>
-
+        
         <div className="rounded-md shadow mt-3">
-          <SongDetailsContainer />
+          <RandomSongContainer />
         </div>
       </div>
     </div>

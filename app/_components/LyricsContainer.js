@@ -1,13 +1,11 @@
 import { useState } from 'react';
 import LyricsPage from './LyricsPage';
-import { useClient } from 'next/client';
 
 const LyricsContainer = () => {
-  useClient();
-
   const [lyrics, setLyrics] = useState('');
   const [artist, setArtist] = useState('');
   const [song, setSong] = useState('');
+  const [error, setError] = useState(null);
 
   const handleArtistChange = (event) => {
     setArtist(event.target.value);
@@ -19,16 +17,27 @@ const LyricsContainer = () => {
 
   const handleSubmit = async (event) => {
     event.preventDefault();
-    const response = await fetch(`https://api.lyrics.ovh/v1/${artist}/${song}`);
-    const data = await response.json();
-    setLyrics(data.lyrics);
+    try {
+      const response = await fetch(`https://api.lyrics.ovh/v1/${artist}/${song}`);
+      const data = await response.json();
+      if (data.lyrics) {
+        setLyrics(data.lyrics);
+        setError(null);
+      } else {
+        setLyrics('');
+        setError('Lyrics not found.');
+      }
+    } catch (error) {
+      setError('Error fetching lyrics.');
+    }
   };
 
   return (
     <LyricsPage 
       lyrics={lyrics} 
-      artist={artist} 
+      artist={artist}
       song={song} 
+      error={error}
       handleArtistChange={handleArtistChange} 
       handleSongChange={handleSongChange} 
       handleSubmit={handleSubmit} 

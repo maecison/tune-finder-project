@@ -1,5 +1,6 @@
+'use client';
 import Link from "next/link";
-import LyricsPage from '../_components/LyricsPage.js';
+import LyricsContainer from "../_components/LyricsContainer.js";
 
 export default function Lyrics() {
   return (
@@ -28,7 +29,7 @@ export default function Lyrics() {
         </p>
 
         <div className="rounded-md shadow mt-3">
-          <LyricsPage />
+          <LyricsContainer />
         </div>
       </div>
     </div>
