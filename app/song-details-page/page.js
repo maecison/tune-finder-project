@@ -1,6 +1,6 @@
-'use client';
+"use client";
 import Link from "next/link";
-import SongDetailsContainer from '../_components/SongDetailsContainer';
+import SongDetailsContainer from "../_components/SongDetailsContainer";
 
 export default function SongDetails() {
   return (

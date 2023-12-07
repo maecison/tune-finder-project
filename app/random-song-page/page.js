@@ -1,15 +1,15 @@
-'use client';
-import React, { useState } from 'react';
+"use client";
+import React, { useState } from "react";
 import Link from "next/link";
 
 export default function RandomSongPage() {
   const [song, setSong] = useState(null);
 
   const fetchRandomSong = async () => {
-    const response = await fetch('/api/random-song');
+    const response = await fetch("/api/random-song");
 
     if (!response.ok) {
-      console.error('Failed to fetch song');
+      console.error("Failed to fetch song");
       return;
     }
 
