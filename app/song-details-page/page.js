@@ -25,7 +25,7 @@ export default function SongDetails() {
         </p>
 
         <p className="mt-3 mb-3 max-w-md mx-auto text-base text-gray-500 sm:text-lg md:mt-3 md:text-xl md:max-w-3xl">
-          Ready to dive deep into the song's details? Enter the Artist and Song Title below!
+          Ready to dive deep into the song&apos;s details? Enter the song title below!
         </p>
 
         <div className="rounded-md shadow mt-3">

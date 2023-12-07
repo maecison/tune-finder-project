@@ -21,7 +21,7 @@ export default function Lyrics() {
         </h1>
 
         <p className="mt-3 max-w-md mx-auto text-base text-gray-500 sm:text-lg md:mt-3 md:text-xl md:max-w-3xl">
-          Enjoy your favorite song's lyrics.
+          Enjoy your favorite song&apos;s lyrics.
         </p>
 
         <p className="mt-3 mb-3 max-w-md mx-auto text-base text-gray-500 sm:text-lg md:mt-3 md:text-xl md:max-w-3xl">
