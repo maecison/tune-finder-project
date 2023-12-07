@@ -1,4 +1,4 @@
-'use client';
+
 import Link from "next/link";
 import LyricsContainer from "../_components/LyricsContainer.js";
 

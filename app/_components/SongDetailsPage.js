@@ -28,9 +28,6 @@ const SongDetailsPage = ({ handleSearch, details, error }) => {
           <h1 className="text-xl font-bold">{details.title}</h1>
           <h2 className="text-lg">{details.full_title}</h2>
           <h3 className="text-md text-gray-500">{details.primary_artist?.name}</h3>
-          <div className="mt-4">
-            <a href={details.url} target="_blank" rel="noreferrer" className="text-indigo-600 hover:text-indigo-800 mt-2 inline-block underline">See on Genius</a>
-          </div>
         </div>
       )}
     </div>
