@@ -20,7 +20,7 @@ export default function Home() {
         <div className="mt-5 sm:mt-8 sm:flex sm:flex-col sm:justify-center lg:justify-start items-center">
           <div className="rounded-md shadow sm:flex mb-3">
             <div className="sm:mr-3">
-              <Link href="/song-details">
+              <Link href="/song-details-page">
                 <button className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-indigo-700 bg-indigo-100 hover:bg-indigo-200 md:py-4 md:text-lg md:px-10">
                   Find Song Details
                 </button>
@@ -28,7 +28,7 @@ export default function Home() {
             </div>
 
             <div>
-              <Link href="/lyricspage">
+              <Link href="/lyrics-page">
                 <button className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-indigo-700 bg-indigo-100 hover:bg-indigo-200 md:py-4 md:text-lg md:px-10">
                   Get Song Lyrics
                 </button>
